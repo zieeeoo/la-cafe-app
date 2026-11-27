@@ -8,5 +8,4 @@ ENV NODE_ENV=production TRUST_PROXY=1 PORT=3000 DATA_DIR=/app/data
 RUN chown -R node:node /app
 USER node
 EXPOSE 3000
-VOLUME ["/app/data"]
 CMD ["node", "server.js"]
